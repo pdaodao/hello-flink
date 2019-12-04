@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+   <property>
+       <name>hive.metastore.uris</name>
+       <value>thrift://10.162.12.125:9083</value>
+       <description>Thrift URI for the remote metastore. Used by metastore client to connect to remote metastore.</description>
+   </property>
+   <property>
+       <name>javax.jdo.option.ConnectionURL</name>
+       <value>jdbc:mysql://10.162.12.125:3306/hive?createDatabaseIfNotExist=true</value>
+   </property>
+
+   <property>
+       <name>javax.jdo.option.ConnectionDriverName</name>
+       <value>com.mysql.jdbc.Driver</value>
+   </property>
+
+   <property>
+       <name>javax.jdo.option.ConnectionUserName</name>
+       <value>hive</value>
+   </property>
+
+   <property>
+       <name>javax.jdo.option.ConnectionPassword</name>
+       <value>hive</value>
+   </property>
+
+   <property>
+       <name>hive.server2.thrift.port</name>
+       <value>10009</value>
+   </property>
+
+   <property>
+       <name>hive.server2.enable.doAs</name>
+       <value>false</value>
+   </property>
+
+   <property>  
+       <name>datanucleus.schema.autoCreateAll</name>  
+       <value>true</value>  
+       <description>creates necessary schema on a startup if one doesn't exist. set this to false, after creating it once</description>  
+   </property>
+
+</configuration>
