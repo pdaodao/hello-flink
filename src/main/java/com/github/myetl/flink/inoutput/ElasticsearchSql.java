@@ -35,7 +35,7 @@ public class ElasticsearchSql {
 
         // kafka 连接信息
         Properties properties = new Properties();
-        properties.setProperty("bootstrap.servers", "10.162.12.126:9092");
+        properties.setProperty("bootstrap.servers", "127.0.0.1:9092");
         properties.setProperty("group.id", "KafkaTableApi");
 
         // 定义表结构
@@ -73,8 +73,8 @@ public class ElasticsearchSql {
                 "    'connector.type' = 'elasticsearch',\n" +
                 "    'connector.version' = '6',\n" +
                 "    'connector.document-type' = 'json',\n" +
-                "    'connector.hosts.0.hostname' = '10.10.77.115',\n" +
-                "    'connector.hosts.0.port' = '9400',\n" +
+                "    'connector.hosts.0.hostname' = '127.0.0.1',\n" +
+                "    'connector.hosts.0.port' = '9200',\n" +
                 "    'connector.hosts.0.protocol' = 'http',\n" +
                 "    'connector.index' = 'stuout',\n" +
                 "    'connector.bulk-flush.interval' = '200',\n" +

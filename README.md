@@ -47,7 +47,7 @@ Apache Flink 是一个分布式流批一体化的开源平台。Flink 的核心�
 
 在基础入门篇中先不介绍Flink的集群环境，直接在Ide中运行Flink程序代码(程序在启动时会启动一个多线程本地环境)，对于集群环境来说代码不需要做任何修改只需提交到集群环境中运行即可。
 
-在该输入输出篇中分别以Datastream API 和 Table API & SQL的方式介绍几种常用的输入输出(见该系列文章)。
+在该输入输出篇中分别以Datastream API 和 Table API & SQL的方式介绍几种常用的输入输出:
  
 -  [输入输出-csv](docs/1.Flink输入输出-csv.md)  
 -  [输入输出-jdbc](docs/2.Flink输入输出-jdbc.md)

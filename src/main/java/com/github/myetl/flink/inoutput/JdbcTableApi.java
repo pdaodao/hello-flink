@@ -31,9 +31,9 @@ public class JdbcTableApi {
         // 输入表相关数据库连接信息
         JDBCOptions jdbcOptions = JDBCOptions.builder()
                 .setDriverName("com.mysql.jdbc.Driver")
-                .setDBUrl("jdbc:mysql://10.12.102.156:3306/vmp")
+                .setDBUrl("jdbc:mysql://127.0.0.1:3306/flink")
                 .setUsername("root")
-                .setPassword("123456")
+                .setPassword("root")
                 .setTableName("student")
                 .build();
 
@@ -55,9 +55,9 @@ public class JdbcTableApi {
         tableEnv.registerTableSink("stuout", JDBCAppendTableSink
                 .builder()
                 .setDrivername("com.mysql.jdbc.Driver")
-                .setDBUrl("jdbc:mysql://10.12.102.156:3306/vmp")
+                .setDBUrl("jdbc:mysql://127.0.0.1:3306/flink")
                 .setUsername("root")
-                .setPassword("123456")
+                .setPassword("root")
                 .setQuery("insert into stuout(name,age,class) values (?,?,?)")
                 .setParameterTypes(Types.STRING, Types.INT, Types.STRING)
                 .build()
