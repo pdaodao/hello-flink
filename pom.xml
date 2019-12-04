@@ -34,7 +34,7 @@ under the License.
 		<scala.binary.version>2.11</scala.binary.version>
 		<maven.compiler.source>${java.version}</maven.compiler.source>
 		<maven.compiler.target>${java.version}</maven.compiler.target>
-		<hive.version>1.2.1</hive.version>
+		<hive.version>2.3.4</hive.version>
 	</properties>
 
 	<dependencies>
