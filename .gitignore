@@ -23,6 +23,7 @@ memoryPolicyExampleSwap
 target
 *.iml
 webapp
+.idea
 idea
 idea/*
 .project
